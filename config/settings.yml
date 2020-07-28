@@ -1,0 +1,8 @@
+link:
+  railstutorial:
+    home: "https://www.railstutorial.org/"
+    help: "https://www.railstutorial.org/help"
+    book: "https://www.railstutorial.org/book"
+    screencasts: "https://screencasts.railstutorial.org/"
+  learnenough: 
+    home: "https://www.learnenough.com/"

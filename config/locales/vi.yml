@@ -1,2 +1,31 @@
 vi:
-  title: "Ứng Dụng Mẫu"
+  title: "Ứng Dụng Mẫu cho Hướng đẫn Ruby on Rails"
+  static_pages:
+    home:
+      title: "Ứng Dụng Mẫu"
+      content: 
+        - "Đây là trang chủ cho ứng dụng mẫu "
+        - "Hướng dẫn Ruby on Rails"
+        - "."
+    help: 
+      title: "Trợ giúp"
+      content: 
+        - "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại "
+        - "Trang trợ giúp hướng dẫn Rails"
+        - ". Để nhận trợ giúp về ứng dụng mẫu này, hãy xem sách"
+        - "Hướng dẫn Ruby on Rails"
+        - "."
+    about:
+      title: "Về chúng tôi"
+      content:
+        - ""
+        - "Hướng dẫn Ruby on Rails"
+        - ", một phần của bộ hướng dẫn"
+        - "Learn Enough"
+        - ", gồm "
+        - "sách"
+        - " và "
+        - "loạt screencast"
+        - " dạy phát triển web với "
+        - "Ruby on Rails"
+        - "Đây là ứng dụng mẫu cho hướng dẫn."
