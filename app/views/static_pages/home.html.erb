@@ -1,7 +1,13 @@
 <% provide :title, t("static_pages.home.title") %>
-<h1><%= t("static_pages.home.title") %></h1> 
-<p>
-  <%= t("static_pages.home.content")[0]  %>
-  <%= link_to t("static_pages.home.content")[1], Settings.link.railstutorial.home %>
-  <%= t("static_pages.home.content")[2] %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t "static_pages.home.welcome" %></h1> 
+  <h2>
+    <%= t("static_pages.home.content")[0]  %>
+    <%= link_to t("static_pages.home.content")[1], Settings.link.railstutorial.home %>
+    <%= t("static_pages.home.content")[2] %>
+  </h2>
+
+  <%= link_to t("shared.signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag(Settings.rails.img, alt: Settings.rails.alt, width: Settings.rails.width), Settings.rails.link %>
