@@ -8,6 +8,11 @@ vi:
     login: "Đăng nhập"
     signup: "Đăng ký ngay!"
     news: "Tin tức"
+    welcome_to_the_sample_app: "Chào mừng đến với Ứng Dụng Mẫu!"
+    user_not_found: "Không tìm thấy người dùng!"
+    the_form_contains: "Biểu mẫu chứa "
+    error: "lỗi"
+    error_sign_up: "Lỗi không thể đăng ký tài khoản"
     creator:
       - ""
       - "Ruby on Rails Tutorial"
@@ -53,3 +58,8 @@ vi:
     signup:
       title: "Đăng ký"
       content: "Đây sẽ là trang đăng ký."
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+      create_my_account: "Tạo tài khoản"
