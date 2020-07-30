@@ -1,8 +1,22 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
+  logo: "Sample App"
+  languages:
+    en: "English"
+    vi: "Vietnamese"
+  shared:
+    login: "Log In"
+    signup: "Sign up Now!"
+    news: "News"
+    creator:
+      - "The "
+      - "Ruby on Rails Tutorial"
+      - " by "
+      - "Michael Hartl"
   static_pages:
     home:
-      title: "SampleApp"
+      title: "Home"
+      welcome: "Welcome to the Sample App"
       content: 
         - "This is the home page for the "
         - "Ruby on Rails Tutorial"
@@ -29,3 +43,13 @@ en:
         - " to teach web development with"
         - "Ruby on Rails"
         - ". This is the sample app for the tutorial."
+    contact:
+      title: "Contact"
+      content:
+        - "Contact the Ruby on Rails Tutorial about the sample app at the "
+        - "contact page"
+        - "."
+  user:
+    signup:
+      title: "Sign up"
+      content: "This will be a signup page for new users."

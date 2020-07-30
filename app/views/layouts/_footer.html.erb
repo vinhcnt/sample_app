@@ -1,0 +1,20 @@
+<footer class="footer"> 
+  <small>
+    <%= t("shared.creator")[0] %>
+    <%= link_to t("shared.creator")[1], Settings.link.railstutorial.home %>
+    <%= t("shared.creator")[2] %>
+    <%= link_to t("shared.creator")[3], Settings.link.michaelhartl.home %>
+  </small>
+  <nav>
+    <ul>
+      <% if I18n.locale == I18n.default_locale %>
+        <li><%= link_to t("languages.en"), locale: :en %></li>
+      <% else %>
+        <li><%= link_to t("languages.vi"), locale: :vi %></li>
+      <%end%>
+      <li><%= link_to t("static_pages.about.title"), about_path %></li>
+      <li><%= link_to t("static_pages.contact.title"), contact_path %></li>
+      <li><%= link_to t("shared.news"), Settings.link.railstutorial.home %></li>
+    </ul>
+  </nav>
+</footer>

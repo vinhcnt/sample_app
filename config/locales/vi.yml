@@ -1,8 +1,22 @@
 vi:
   title: "Ứng Dụng Mẫu cho Hướng đẫn Ruby on Rails"
+  logo: "Ứng Dụng Mẫu"
+  languages:
+    en: "Tiếng Anh"
+    vi: "Tiếng Việt"
+  shared:
+    login: "Đăng nhập"
+    signup: "Đăng ký ngay!"
+    news: "Tin tức"
+    creator:
+      - ""
+      - "Ruby on Rails Tutorial"
+      - " bởi "
+      - "Michael Hartl"
   static_pages:
     home:
-      title: "Ứng Dụng Mẫu"
+      title: "Trang chủ"
+      welcome: "Chào mừng đến với Ứng Dụng Mẫu"
       content: 
         - "Đây là trang chủ cho ứng dụng mẫu "
         - "Hướng dẫn Ruby on Rails"
@@ -29,3 +43,13 @@ vi:
         - " dạy phát triển web với "
         - "Ruby on Rails"
         - "Đây là ứng dụng mẫu cho hướng dẫn."
+    contact:
+      title: "Liên hệ"
+      content:
+        - "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại "
+        - "trang liên hệ"
+        - "."
+  user:
+    signup:
+      title: "Đăng ký"
+      content: "Đây sẽ là trang đăng ký."

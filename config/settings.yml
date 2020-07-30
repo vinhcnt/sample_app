@@ -4,5 +4,13 @@ link:
     help: "https://www.railstutorial.org/help"
     book: "https://www.railstutorial.org/book"
     screencasts: "https://screencasts.railstutorial.org/"
-  learnenough: 
+    contact: "https://www.railstutorial.org/contact"
+  learnenough:
     home: "https://www.learnenough.com/"
+  michaelhartl:
+    home: "https://www.michaelhartl.com/"
+rails:
+  img: "rails.svg"
+  alt: "Rails logo"
+  width: "200px"
+  link: "https://rubyonrails.org/"
