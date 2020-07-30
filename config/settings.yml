@@ -14,3 +14,12 @@ rails:
   alt: "Rails logo"
   width: "200px"
   link: "https://rubyonrails.org/"
+validation:
+  user:
+    name:
+      max_length: 50
+    email:
+      valid_email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+      max_length: 255
+    password:
+      min_length: 6
