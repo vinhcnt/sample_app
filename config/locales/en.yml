@@ -14,6 +14,7 @@ en:
     news: "News"
     welcome_to_the_sample_app: "Welcome to the Sample App!"
     invalid_email_password: "Invalid email/password combination"
+    remember_me: "Remember me on this computer"
     user_not_found: "User not found!"
     the_form_contains: "The form contains "
     error: "error"

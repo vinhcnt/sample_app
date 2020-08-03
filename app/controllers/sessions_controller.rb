@@ -5,15 +5,20 @@ class SessionsController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
       log_in user
+      if params[:session][:remember_me] == Settings.checkbox
+        remember user
+      else
+        forget user
+      end
       redirect_to user
     else
-      flash.now[:danger] = t "invalid_email_password"
+      flash.now[:danger] = t "shared.invalid_email_password"
       render :new
     end
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 end
