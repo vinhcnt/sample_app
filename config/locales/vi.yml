@@ -14,6 +14,7 @@ vi:
     news: "Tin tức"
     welcome_to_the_sample_app: "Chào mừng đến với Ứng Dụng Mẫu!"
     invalid_email_password: "Email hoặc Mật khẩu không chính xác"
+    remember_me: "Duy trì đăng nhập"
     user_not_found: "Không tìm thấy người dùng!"
     the_form_contains: "Biểu mẫu chứa "
     error: "lỗi"

@@ -24,3 +24,4 @@ validation:
     password:
       min_length: 6
 avatar_size: 80
+checkbox: "1"
