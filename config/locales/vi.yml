@@ -4,6 +4,13 @@ vi:
   languages:
     en: "Tiếng Anh"
     vi: "Tiếng Việt"
+  views:
+    pagination:
+      first: "&laquo; Đầu"
+      last: "Cuối &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Sau &rsaquo;"
+      truncate: "&hellip;"
   shared:
     profile: "Thông tin"
     settings: "Cài đặt"
@@ -19,6 +26,12 @@ vi:
     the_form_contains: "Biểu mẫu chứa "
     error: "lỗi"
     error_sign_up: "Lỗi không thể đăng ký tài khoản"
+    profile_updated: "Đã cập nhật"
+    profile_updated_failed: "Cập nhật thất bại"
+    please_log_in: "Hãy đăng nhập trước."
+    delete: "xóa"
+    you_sure: "Bạn có chắc chắn muốn xóa?"
+    user_deleted: "Người dùng đã bị xóa"
     creator:
       - ""
       - "Ruby on Rails Tutorial"
@@ -75,3 +88,9 @@ vi:
       sign_up_now: "Đăng ký ngay!"
       email: "Email"
       password: "Mật khẩu"
+    edit:
+      title: "Thay đổi thông tin"
+      save_changes: "Lưu thay đổi"
+      change: "Đổi"
+    index:
+      title: "Tất cả người dùng"

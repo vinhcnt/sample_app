@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   USER_PARAMS = %i(name email password password_confirmation).freeze
-  
+
   attr_accessor :remember_token
 
   before_save :downcase_email
