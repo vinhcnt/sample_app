@@ -11,6 +11,10 @@ vi:
       previous: "&lsaquo; Trước"
       next: "Sau &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Chào"
+    welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
+    activate: "Kích hoạt"
   shared:
     profile: "Thông tin"
     settings: "Cài đặt"
@@ -32,6 +36,10 @@ vi:
     delete: "xóa"
     you_sure: "Bạn có chắc chắn muốn xóa?"
     user_deleted: "Người dùng đã bị xóa"
+    account_activated: "Tài khoản đã được kích hoạt"
+    invalid_activation_link: "Đường dẫn kích hoạt không hoạt dộng"
+    account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra hộp thư của bạn và kích hoạt tài khoản bằng đường dẫn đã được gửi."
+    account_activation: "Kích hoạt tài khoản"
     creator:
       - ""
       - "Ruby on Rails Tutorial"
