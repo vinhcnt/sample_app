@@ -9,6 +9,8 @@ link:
     home: "https://www.learnenough.com/"
   michaelhartl:
     home: "https://www.michaelhartl.com/"
+  gravatar:
+    emails: "https://gravatar.com/emails"
 rails:
   img: "rails.svg"
   alt: "Rails logo"
@@ -24,4 +26,6 @@ validation:
     password:
       min_length: 6
 avatar_size: 80
+avatar_small_size: 50
 checkbox: "1"
+pagination: 10

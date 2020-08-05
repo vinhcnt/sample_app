@@ -4,6 +4,13 @@ en:
   languages:
     en: "English"
     vi: "Vietnamese"
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
   shared:
     profile: "Profile"
     settings: "Settings"
@@ -19,6 +26,12 @@ en:
     the_form_contains: "The form contains "
     error: "error"
     error_sign_up: "Sign up error"
+    profile_updated: "Profile updated"
+    profile_updated_failed: "Profile update failed"
+    please_log_in: "Please log in."
+    delete: "delete"
+    you_sure: "You sure?"
+    user_deleted: "User deleted"
     creator:
       - "The "
       - "Ruby on Rails Tutorial"
@@ -75,3 +88,9 @@ en:
       sign_up_now: "Sign up now!"
       email: "Email"
       password: "Password"
+    edit:
+      title: "Edit user"
+      save_changes: "Save changes"
+      change: "Change"
+    index:
+      title: "All users"
