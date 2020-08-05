@@ -19,8 +19,14 @@ class SessionsController < ApplicationController
   private
 
   def user_authenticated_handle user
-    log_in user
-    params[:session][:remember_me] == Settings.checkbox ? remember(user) : forget(user)
-    redirect_back_or user
+    if user.activated?
+      log_in user
+      params[:session][:remember_me] == Settings.checkbox ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      message = t "shared.account_not_activated"
+      flash[:warning] = message
+      redirect_to root_url
+    end
   end
 end

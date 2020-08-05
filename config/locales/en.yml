@@ -11,6 +11,10 @@ en:
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
+    activate: "Activate"
   shared:
     profile: "Profile"
     settings: "Settings"
@@ -32,7 +36,11 @@ en:
     delete: "delete"
     you_sure: "You sure?"
     user_deleted: "User deleted"
-    creator:
+    account_activated: "Account activated!"
+    invalid_activation_link: "Invalid activation link"
+    account_not_activated: "Account not activated. Check your email for the activation link."
+    account_activation: "Account activation"
+    creator: 
       - "The "
       - "Ruby on Rails Tutorial"
       - " by "
