@@ -40,6 +40,18 @@ vi:
     invalid_activation_link: "Đường dẫn kích hoạt không hoạt dộng"
     account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra hộp thư của bạn và kích hoạt tài khoản bằng đường dẫn đã được gửi."
     account_activation: "Kích hoạt tài khoản"
+    forgot_password: "(quên mật khẩu)"
+    email_address_not_found: "Email không tồn tại"
+    email_sent_with_password_reset_instructions: "Hãy kiểm tra hộp thư của bạn"
+    password_reset: "Đổi mật khẩu"
+    reset_password: "Đổi mật khẩu"
+    click_the_link_blow: "Nhấn vào liên kết dưới đây để đặt lại mật khẩu:"
+    expire_in: "Đường đẫn sẽ hết hạn sau hai tiếng"
+    if_you_did_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    cant_be_empty: "Không để trống"
+    password_has_been_reset: "Mật khẩu đã được đổi"
+    can_not_reset_password: "Không thể đặt lại mật khẩu"
+    password_reset_has_expired: "Hết hạn đổi mật khẩu"
     creator:
       - ""
       - "Ruby on Rails Tutorial"
@@ -102,3 +114,12 @@ vi:
       change: "Đổi"
     index:
       title: "Tất cả người dùng"
+    forgot_password:
+      title: "Quên mật khẩu"
+      submit: "Gửi"
+  password_reset:
+    title: "Đặt lại mật khẩu"
+    email: "Email"
+    password: "Mật khẩu"
+    confirmation: "Nhập lại mật khẩu"
+    update_password: "Cập nhật mật khẩu"
