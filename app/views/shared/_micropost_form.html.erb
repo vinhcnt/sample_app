@@ -1,0 +1,11 @@
+<%= form_for @micropost do |f| %>
+  <%= render "shared/error_messages", object: f.object %> 
+  <div class="field">
+    <%= f.text_area :content, placeholder: t(".placeholder") %> 
+  </div>
+  <%= f.submit t(".post"), class: "btn btn-primary" %>
+  <span class="image">
+    <%= f.file_field :image, accept: Settings.micropost.types %>
+  </span>
+<% end %>
+<%= javascript_pack_tag "micropost", "data-turbolinks-track": "reload" %>

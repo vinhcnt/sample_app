@@ -1,5 +1,5 @@
-<% provide :title, t("user.index.title") %> 
-<h1><%= t "user.index.title" %></h1>
+<% provide :title, t(".title") %> 
+<h1><%= t ".title" %></h1>
 <%= paginate @users, theme: "twitter-bootstrap-4" %>
 <ul class="users">
   <%= render @users %>

@@ -4,10 +4,10 @@ class AccountActivationsController < ApplicationController
     if user&.authenticated?(:activation, params[:id]) && !user.activated?
       user.activate
       log_in user
-      flash[:success] = t "shared.account_activated"
+      flash[:success] = t ".account_activated"
       redirect_to user
     else
-      flash[:danger] = t "shared.invalid_activation_link"
+      flash[:danger] = t ".invalid_activation_link"
       redirect_to root_url
     end
   end

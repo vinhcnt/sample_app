@@ -1,9 +1,6 @@
 vi:
   title: "Ứng Dụng Mẫu cho Hướng đẫn Ruby on Rails"
-  logo: "Ứng Dụng Mẫu"
-  languages:
-    en: "Tiếng Anh"
-    vi: "Tiếng Việt"
+  please_log_in: "Hãy đăng nhập trước"
   views:
     pagination:
       first: "&laquo; Đầu"
@@ -11,56 +8,88 @@ vi:
       previous: "&lsaquo; Trước"
       next: "Sau &rsaquo;"
       truncate: "&hellip;"
-  mails:
-    greeting: "Chào"
-    welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
-    activate: "Kích hoạt"
+  layouts:
+    header:
+      logo: "Ứng Dụng Mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      users: "Người dùng"
+      profile: "Thông tin"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
+    footer:
+      creator:
+        - ""
+        - "Ruby on Rails Tutorial"
+        - " bởi "
+        - "Michael Hartl" 
+      languages:
+        en: "Tiếng Anh"
+        vi: "Tiếng Việt"
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news: "Tin tức"
+  microposts:
+    micropost:
+      posted: "Đăng"
+      ago: "trước"
+      delete: "xóa"
+      you_sure: "Bạn có chắc?"
+    destroy:
+      micropost_deleted: "Bài đã bị xóa"
+    create:
+      micropost_created: "Bài đã được đăng"
+      micropost_failed: "Không thể đăng bài"
+  password_resets:
+    edit:
+      title: "Đổi mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Nhập lại"
+      update_password: "Cập nhật mật khẩu"
+    new:
+      title: "Quên mật khẩu"
+      email: "Email"
+      submit: "Gửi"
+    create:
+      email_sent_with_password_reset_instructions: "Email đã được gửi đến hộp thư của bạn"
+      email_address_not_found: "Email không tồn tại"
+    update:
+      cant_be_empty: "Không được bỏ trống"
+      password_has_been_reset: "Mật khẩu đã được đổi"
+      can_not_reset_password: "Không thể đổi mật khẩu"
+    user_not_found: "Không tìm thấy người dùng"
+    password_reset_has_expired: "Email hết hạn"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      forgot_password: "Quên mật khẩu"
+      remember_me: "Duy trì đăng nhập"
+      login: "Đăng nhập"
+      new_user: "Bạn chưa có tài khoản?"
+      sign_up_now: "Đăng ký ngay "
+    create:
+      invalid_email_password: "Email/Password không hợp lệ"
+      account_not_activated: "Tài khoản chưa được kích hoạt"
   shared:
-    profile: "Thông tin"
-    settings: "Cài đặt"
-    users: "Người dùng"
-    login: "Đăng nhập"
-    logout: "Đăng xuất"
-    signup: "Đăng ký ngay!"
-    news: "Tin tức"
-    welcome_to_the_sample_app: "Chào mừng đến với Ứng Dụng Mẫu!"
-    invalid_email_password: "Email hoặc Mật khẩu không chính xác"
-    remember_me: "Duy trì đăng nhập"
-    user_not_found: "Không tìm thấy người dùng!"
-    the_form_contains: "Biểu mẫu chứa "
-    error: "lỗi"
-    error_sign_up: "Lỗi không thể đăng ký tài khoản"
-    profile_updated: "Đã cập nhật"
-    profile_updated_failed: "Cập nhật thất bại"
-    please_log_in: "Hãy đăng nhập trước."
-    delete: "xóa"
-    you_sure: "Bạn có chắc chắn muốn xóa?"
-    user_deleted: "Người dùng đã bị xóa"
-    account_activated: "Tài khoản đã được kích hoạt"
-    invalid_activation_link: "Đường dẫn kích hoạt không hoạt dộng"
-    account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra hộp thư của bạn và kích hoạt tài khoản bằng đường dẫn đã được gửi."
-    account_activation: "Kích hoạt tài khoản"
-    forgot_password: "(quên mật khẩu)"
-    email_address_not_found: "Email không tồn tại"
-    email_sent_with_password_reset_instructions: "Hãy kiểm tra hộp thư của bạn"
-    password_reset: "Đổi mật khẩu"
-    reset_password: "Đổi mật khẩu"
-    click_the_link_blow: "Nhấn vào liên kết dưới đây để đặt lại mật khẩu:"
-    expire_in: "Đường đẫn sẽ hết hạn sau hai tiếng"
-    if_you_did_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
-    cant_be_empty: "Không để trống"
-    password_has_been_reset: "Mật khẩu đã được đổi"
-    can_not_reset_password: "Không thể đặt lại mật khẩu"
-    password_reset_has_expired: "Hết hạn đổi mật khẩu"
-    creator:
-      - ""
-      - "Ruby on Rails Tutorial"
-      - " bởi "
-      - "Michael Hartl"
+    error_messages:
+      the_form_contains: "Mẫu đã gửi chứa"
+      error: "lỗi"
+    micropost_form:
+      placeholder: "Bạn đang nghĩ gì?"
+      post: "Đăng"
+      oversize_alert: "Đăng ảnh lớn quá rồi bạn ơi!"
+    user_info:
+      view_my_profile: "xem thông tin"
+      micropost: "bài viết"
   static_pages:
     home:
       title: "Trang chủ"
       welcome: "Chào mừng đến với Ứng Dụng Mẫu"
+      micropost_feed: "Bản tin"
+      signup: "Đăng ký ngay"
       content: 
         - "Đây là trang chủ cho ứng dụng mẫu "
         - "Hướng dẫn Ruby on Rails"
@@ -93,33 +122,48 @@ vi:
         - "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại "
         - "trang liên hệ"
         - "."
-  user:
-    signup:
-      title: "Đăng ký"
-      content: "Đây sẽ là trang đăng ký."
+  user_mailer:
+    account_activation:
+      greeting: "Chào"
+      welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
+      activate: "Kích hoạt"
+    password_reset:
+      title: "Đổi mật khẩu"
+      click_the_link_blow: "Nhấn vào liên kết dưới đây"
+      reset_password: "Đặt lại mật khẩu"
+      expire_in: "Đường đẫn sẽ hết hạn sau hai tiếng"
+      if_you_did_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+  users:
+    form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
-      confirmation: "Xác nhận"
-      create_my_account: "Tạo tài khoản"
-    login:
-      title: "Đăng nhập"
-      new_user: "Bạn chưa có tài khoản?"
-      sign_up_now: "Đăng ký ngay!"
-      email: "Email"
-      password: "Mật khẩu"
+      confirmation: "Nhập lại"
+    user:
+      delte: "xóa"
+      you_sure: "Bạn có chắc muốn xóa bài?"
     edit:
-      title: "Thay đổi thông tin"
+      title: "Sửa thông tin"
       save_changes: "Lưu thay đổi"
-      change: "Đổi"
+      change: "đổi"
     index:
-      title: "Tất cả người dùng"
-    forgot_password:
-      title: "Quên mật khẩu"
-      submit: "Gửi"
-  password_reset:
-    title: "Đặt lại mật khẩu"
-    email: "Email"
-    password: "Mật khẩu"
-    confirmation: "Nhập lại mật khẩu"
-    update_password: "Cập nhật mật khẩu"
+      title: "Danh sách người dùng"
+    new:
+      title: "Tạo tài khoản"
+      create_my_account: "Tạo"
+    show:
+      micropost_with: ! "Bài viết (%{count})"
+      user_not_found: "Không tìm thấy người dùng"
+    create:
+      welcome_to_the_sample_app: "Chào mừng đến với Ứng Dụng Mẫu"
+      error_sign_up: "Lỗi đăng ký"
+    update:
+      profile_updated: "Đã cập nhật thông tin"
+      profile_update_failed: "Không thể cập nhật thông tin"
+    destroy:
+      user_deleted: "Đã xóa người dùng"
+      user_not_found: "Không tìn thấy người dùng"
+  account_activations:
+    edit:
+      account_activated: "Tài khoản đã kích hoạt!"
+      invalid_activation_link: "Lỗi kích hoạt tài khoản"

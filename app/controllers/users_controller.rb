@@ -13,9 +13,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.created_post_at.page(params[:page]).per Settings.micropost.pagination
     return if @user
 
-    flash[:warning] = t "shared.user_not_found"
+    flash[:warning] = t ".user_not_found"
     redirect_to root_path
   end
 
@@ -23,10 +24,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       @user.send_activation_email
-      flash[:success] = t "shared.welcome_to_the_sample_app"
+      flash[:success] = t ".welcome_to_the_sample_app"
       redirect_to @user
     else
-      flash[:danger] = t "shared.error_sign_up"
+      flash[:danger] = t ".error_sign_up"
       render :new
     end
   end
@@ -35,19 +36,19 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = t "shared.profile_updated"
+      flash[:success] = t ".profile_updated"
       redirect_to @user
     else
-      flash[:danger] = t "shared.profile_update_failed"
+      flash[:danger] = t ".profile_update_failed"
       render :edit
     end
   end
 
   def destroy
     if User.find_by(id: params[:id])&.destroy
-      flash[:success] = t "shared.user_deleted"
+      flash[:success] = t ".user_deleted"
     else
-      flash[:danger] = t "shared.user_not_found"
+      flash[:danger] = t ".user_not_found"
     end
 
     redirect_to users_url
@@ -57,14 +58,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::USER_PARAMS
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "shared.please_log_in"
-    redirect_to login_url
   end
 
   def correct_user

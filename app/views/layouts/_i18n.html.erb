@@ -1,0 +1,4 @@
+<%= javascript_tag do %>
+  I18n.locale = "<%= I18n.locale %>";
+<% end %>
+<%= javascript_pack_tag "translations/#{I18n.locale}" %>
