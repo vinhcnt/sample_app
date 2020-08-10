@@ -30,3 +30,16 @@ avatar_small_size: 50
 checkbox: "1"
 pagination: 10
 password_reset_expired: 2
+micropost:
+  format:
+    - image/jpeg 
+    - image/gif 
+    - image/png
+  max_length: 140
+  pagination: 10
+  image:
+    size: 5
+    resize_to_limit:
+      - 500
+      - 500
+  types: "image/jpeg,image/gif,image/png"

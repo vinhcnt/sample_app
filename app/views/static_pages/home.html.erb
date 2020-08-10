@@ -1,13 +1,28 @@
-<% provide :title, t("static_pages.home.title") %>
-<div class="center jumbotron">
-  <h1><%= t "static_pages.home.welcome" %></h1> 
-  <h2>
-    <%= t("static_pages.home.content")[0]  %>
-    <%= link_to t("static_pages.home.content")[1], Settings.link.railstutorial.home %>
-    <%= t("static_pages.home.content")[2] %>
-  </h2>
-
-  <%= link_to t("shared.signup"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-
-<%= link_to image_tag(Settings.rails.img, alt: Settings.rails.alt, width: Settings.rails.width), Settings.rails.link %>
+<% provide :title, t(".title") %>
+<% if logged_in? %> 
+  <div class="row">
+    <aside class="col-md-4"> 
+      <section class="user_info">
+        <%= render "shared/user_info" %> 
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %> 
+      </section>
+    </aside> 
+    <div class="col-md-8">
+      <h3><%= t ".micropost_feed" %></h3>
+      <%= render "shared/feed" %> 
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t ".welcome" %></h1> 
+    <h2>
+      <%= t(".content")[0]  %>
+      <%= link_to t(".content")[1], Settings.link.railstutorial.home %>
+      <%= t(".content")[2] %>
+    </h2>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag(Settings.rails.img, alt: Settings.rails.alt, width: Settings.rails.width), Settings.rails.link %>
+<% end %>

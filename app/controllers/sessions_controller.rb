@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       user_authenticated_handle user
     else
-      flash.now[:danger] = t "shared.invalid_email_password"
+      flash.now[:danger] = t ".invalid_email_password"
       render :new
     end
   end
@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
       params[:session][:remember_me] == Settings.checkbox ? remember(user) : forget(user)
       redirect_back_or user
     else
-      message = t "shared.account_not_activated"
+      message = t ".account_not_activated"
       flash[:warning] = message
       redirect_to root_url
     end
