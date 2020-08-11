@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :logged_in_user, except: %i(new show create)
+  before_action :load_user, only: %i(show following followers)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -12,12 +13,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by id: params[:id]
     @microposts = @user.microposts.created_post_at.page(params[:page]).per Settings.micropost.pagination
-    return if @user
-
-    flash[:warning] = t ".user_not_found"
-    redirect_to root_path
   end
 
   def create
@@ -54,7 +50,27 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t ".title"
+    @users = @user.following.page params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @users = @user.followers.page params[:page]
+    render "show_follow"
+  end
+
   private
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t "user_not_found"
+    redirect_to root_path
+  end
 
   def user_params
     params.require(:user).permit User::USER_PARAMS

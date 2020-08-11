@@ -15,6 +15,7 @@ class Micropost < ApplicationRecord
                            message: I18n.t("micoposts.should_be_less_than")}
 
   scope :created_post_at, ->{order created_at: :desc}
+  scope :new_feed, ->(following_ids){where user_id: following_ids}
 
   def display_image
     image.variant resize_to_limit: Settings.micropost.image.resize_to_limit

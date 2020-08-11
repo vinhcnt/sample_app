@@ -1,6 +1,7 @@
 vi:
   title: "Ứng Dụng Mẫu cho Hướng đẫn Ruby on Rails"
   please_log_in: "Hãy đăng nhập trước"
+  user_not_found: "Không tìm thấy người dùng"
   views:
     pagination:
       first: "&laquo; Đầu"
@@ -84,6 +85,9 @@ vi:
     user_info:
       view_my_profile: "xem thông tin"
       micropost: "bài viết"
+    stats:
+      following: "theo dõi"
+      followers: "người theo dõi"
   static_pages:
     home:
       title: "Trang chủ"
@@ -124,6 +128,7 @@ vi:
         - "."
   user_mailer:
     account_activation:
+      title: "Kích hoạt tài khoản"
       greeting: "Chào"
       welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
       activate: "Kích hoạt"
@@ -134,6 +139,17 @@ vi:
       expire_in: "Đường đẫn sẽ hết hạn sau hai tiếng"
       if_you_did_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
   users:
+    follow: 
+      submit: "Theo dõi"
+    unfollow: 
+      submit: "Hủy theo dõi"
+    following:
+      title: "Theo dõi"
+    followers:
+      title: "Người theo dõi"
+    show_follow:
+      view_my_profile: "xem thông tin"
+      micropost: "Bài viết:"
     form:
       name: "Tên"
       email: "Email"
