@@ -27,6 +27,7 @@ validation:
       min_length: 6
 avatar_size: 80
 avatar_small_size: 50
+avatar_tiny_size: 30
 checkbox: "1"
 pagination: 10
 password_reset_expired: 2
